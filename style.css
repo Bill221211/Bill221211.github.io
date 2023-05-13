@@ -1,0 +1,126 @@
+/* 默认情况下，两列堆叠显示 */
+.column {
+    width: 100%;
+}
+
+/* 当屏幕宽度大于等于 600 像素时，两列并排显示 */
+@media screen and (min-width: 600px) {
+    .column {
+        width: 50%;
+        float: left;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #181818;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+
+    header h1 {
+        margin: 0;
+        color: #1db954;
+    }
+
+    header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav li {
+        margin: 0 20px;
+    }
+
+    header nav a {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+        header nav a:hover {
+            color: #1db954;
+        }
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #282828;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+    section h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    section ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    section li {
+        margin-bottom: 10px;
+    }
+
+    section h2 {
+        font-size: 24px;
+        color: #1db954;
+    }
+
+    section p {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+    }
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+body {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
